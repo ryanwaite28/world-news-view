@@ -94,6 +94,7 @@
           $scope.posts = json.posts
           $scope.posts.forEach(post => {
             post['icon'] = $scope.makeHTTPS(post['icon']);
+            post['user']['icon'] = $scope.makeHTTPS(post['user']['icon']);
           })
           $scope.$apply(function(){ console.log($scope); });
         });
